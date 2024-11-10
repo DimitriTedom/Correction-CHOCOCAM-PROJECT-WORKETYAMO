@@ -5,7 +5,7 @@ Ce Projet a été realiser pour repondre au projet 1 de la formation en Developp
 ## 🚀 Technologies 
 
 - **HTML5**
--**CSS3**
+- **CSS3**
 
 ## ✨ Fonctionnalités
 
@@ -23,7 +23,6 @@ cd Correction-CHOCOCAM-PROJECT-WORKETYAMO
 ```
 ## Contributeurs
 
-Merci à tous les contributeurs de ce projet !
 
 | [![SnowDev](https://github.com/DimitriTedom.png?size=100)](https://github.com/DimitriTedom) |
 |:----------------------------------------------------------------------------------------------:|
