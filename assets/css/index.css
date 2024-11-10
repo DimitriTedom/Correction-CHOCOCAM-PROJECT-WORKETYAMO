@@ -143,3 +143,95 @@ width: 100%;
     font-size: 2.4rem;
     margin-top: 2rem;
 }
+
+.consommateur_Parent{
+    padding: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    margin-top: 4rem;
+}
+
+.consommateur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.consommateur>p{
+    font-size: 2.4rem;
+    text-align: center;
+    color: white;
+}
+.consommateur>h1{
+    font-size: 5.5rem;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.articles_container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 5rem;
+}
+.articles{
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+.contain{
+    position: relative;
+    display: inline-block;
+}
+.article{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.form_container{
+    background-color: var(--primary-color);
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    flex-direction: column;
+    gap: 4rem;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty{
+    width: 90%;
+    border: 1px #020202 solid;
+    background-color: white;
+    padding: 3rem;
+}
+.twins{
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
+    gap: 4rem;
+}
+.empty_daught{
+    width: 100%;
+    border: 1px #020202 solid;
+    background-color: white;
+    padding: 3rem;
+}
+.bouton{
+    background-color: var(--secondary-color);
+    padding: 2rem 20rem;
+    color: white;
+    font-size: 4rem;
+    flex-direction: row;
+    display: flex;
+    font-weight: 600;
+    gap: 1rem;
+}
