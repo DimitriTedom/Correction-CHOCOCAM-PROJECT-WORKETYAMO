@@ -43,7 +43,7 @@ header{
     text-decoration: none;
     color: inherit;
 }
-.ul_nav>li :hover{
+.ul_nav>li:hover{
     color: var(--logo-color);
     transition: 300ms;
     border-bottom: .2rem var(--logo-color) solid;
@@ -54,9 +54,18 @@ header{
     background-color: #3E3232;
     color: var(--primary-color);
     padding: 1.7rem;
-    border-radius: 1rem;
+    border-radius: .6rem;
     font-weight: bold;
     cursor: pointer;
+}
+.contact:hover{
+    color: white;
+    background-color: var(--primary-color);
+    transition: 200ms;
+    box-shadow: 0 8px 16px  gray;
+    transform: translateY(-.5rem);
+    transition-duration: 300ms;
+    bottom: .1rem;
 }
 
 .choco{
@@ -98,6 +107,9 @@ width: 100%;
     color: #DFCECE;
     font-size: x-large;
 }
+.choco_but>h2:hover{
+    color: white;
+}
 .choco_but{
     display: flex;
     align-self: self-start;
@@ -110,11 +122,11 @@ width: 100%;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.choco_but hover{
-    box-shadow: 0 8px 16px  #a52a2a;
-    transform: translateY(-5rem);
+.choco_but:hover {
+    box-shadow: 0 8px 16px  gray;
+    transform: translateY(-.5rem);
     transition-duration: 300ms;
-    bottom: 1rem;
+    bottom: .1rem;
 }
 
 #chocolatier{
@@ -145,7 +157,7 @@ width: 100%;
 }
 
 .consommateur_Parent{
-    padding: 6rem;
+    padding: 10rem;
     display: flex;
     justify-content: space-evenly;
     background-color: var(--secondary-color);
@@ -157,7 +169,16 @@ width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animation lissée */
+    border-radius: 2rem;
+    padding: .9rem;
 }
+.consommateur:hover {
+    transform: translateY(-10px) scale(1.05); /* soulèvement(translate sur l'ordonée) et agrandissement avec scale */
+    box-shadow: 0 10px 20px var(--primary-color); /* ajoute une ombre pour l’effet de relief */
+    cursor:not-allowed;
+}
+
 .consommateur>p{
     font-size: 2.4rem;
     text-align: center;
@@ -184,13 +205,19 @@ align-items: center;
 }
 .contain{
     position: relative;
-    display: inline-block;
+    display: inline-block; /*NB: inline-block c'est pour que tous ses enfants prenent juste l'espace necessaire pour leur affichage*/
+}
+.contain:hover .article{
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
 }
 .article{
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%) scale(0.8); /*Sa c'est pour ajuster le point de reference au centre et scale() c'est pour que l'article commence a s'afficher petit*/
+opacity: 0;
+transition: transform 0.6s ease, opacity 0.6s ease;
 }
 .form_container{
     background-color: var(--primary-color);
@@ -234,4 +261,15 @@ transform: translate(-50%,-50%);
     display: flex;
     font-weight: 600;
     gap: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20rem 0rem;
+    background-color: #3E3232;
+    margin-top: 40rem;
+}
+footer>img{
+    width: 40%;
 }
